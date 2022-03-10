@@ -1,0 +1,44 @@
+git clone https://github.com/MartinJanevski/SI_2022_lab1_121084.git
+
+git add *
+git commit -m "Add 5 items to the shopping list"
+git push origin
+
+git add *
+git commit -m "Add quantities to the items"
+git push origin
+
+git push --set-upstream origin branch1
+git push --set-upstream origin branch2
+
+git checkout branch1
+git add *
+git commit -m "Change quantity of item #5"
+git push origin
+
+git checkout master
+git add *
+git commit -m "Change quantity of item #2"
+git push origin
+
+git checkout branch2
+
+
+git add *
+git commit -m "Modify item #4"
+git push origin
+
+git add *
+git commit -m "Modify item #4 and add item #6""
+git push origin
+
+git checkout master
+git merge branch1
+git merge branch2
+git add *
+git commit -m "merged"
+git push
+
+git add *
+git commit -m "Add docs"
+git push
